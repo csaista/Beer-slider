@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer slider</title>
+    <link rel="stylesheet" href="./css/BeerSlider.css">
+</head>
+
+<body>
+    <h1> Beer Slider</h1>
+    <h3>BEfore aftER </h3>
+    <div class="slider-wrapper">
+        <div id="slider" class="beer-slider" data-beer-label="before">
+            <img src="images/sound-off.svg" alt="before" class="before-img">
+            <div class="beer-reveal" data-beer-label="after">
+                <img src="images/sound-on.svg" alt="after" class="after-img">
+            </div>
+        </div>
+    </div>
+    <script src="./js/BeerSlider.js"></script>
+    <script>
+        new BeerSlider(document.getElementById('slider'));
+    </script>
+</body>
+
+</html>
